@@ -8,8 +8,8 @@ def fk_calculator(lengths, angles):
 
     for i in range(len(lengths)):
         total_angle += angles[i]
-        x += x + lengths[i] * np.cos(total_angle)
-        y += y + lengths[i] * np.sin(total_angle)
+        x += lengths[i] * np.cos(total_angle)
+        y += lengths[i] * np.sin(total_angle)
         positions.append((x,y))
 
     return np.array(positions)
@@ -20,8 +20,8 @@ def plot_robot(positions):
     plt.axis('equal')
     plt.show()
 
-lengths = [2, 1.5, 1]
-angles = [np.pi/4, -np.pi/6, np.pi/3]
+lengths = [1, 1, 1]
+angles = [np.pi/6, np.pi/4, -np.pi/6]
 
 positions = fk_calculator(lengths, angles)
 plot_robot(positions)
