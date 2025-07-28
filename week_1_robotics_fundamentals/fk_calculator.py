@@ -16,8 +16,13 @@ def fk_calculator(lengths, angles):
 
 def plot_robot(positions):
     x_vals, y_vals = positions[:, 0], positions[:, 1]
-    plt.plot(x_vals, y_vals, 'o-')
+    plt.plot(x_vals, y_vals, 'o-', label='Robotic Arm Configuration')
     plt.axis('equal')
+    plt.title('Robotic Arm Forward Kinematics Simulation')
+    plt.xlabel('X-coordinate')
+    plt.ylabel('Y-coordinate')
+    plt.grid(True)
+    plt.legend()
     plt.show()
 
 lengths = [1, 1, 1]
