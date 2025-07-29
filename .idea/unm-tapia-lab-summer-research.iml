@@ -3,8 +3,10 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/improved-swept-volume-geometry/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/improved-swept-volume-geometry/.venv1" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 (unm-tapia-lab-summer-research)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.11 (unm-tapia-lab-summer-research)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
